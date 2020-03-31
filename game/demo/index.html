@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>spot-the-ball.js</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="demo.css">
+        <style>
+        body {
+          margin: 0;
+          padding: 0;
+        }
+        .markdown-body {
+          max-width: 780px;
+          min-width: 290px;
+          margin: 0 auto;
+          padding: 30px;
+        }
+
+        .incomplete g.heat-map {
+          -webkit-transition: opacity 1s ease 1s;
+          transition: opacity 1s ease 1s;
+        }
+
+        .incomplete circle {
+          -webkit-transition: stroke 5s;
+          transition: stroke 5s;
+        }
+
+        .incomplete img.solution {
+          -webkit-transition: opacity 1s;
+          transition: opacity 1s;
+        }
+
+        .incomplete circle.guess {
+          transition: stroke 1s;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="markdown-body">
+        
+          <!-- Title -->
+          <h2 id="demo">Demo</h2>
+
+          <!-- Game -->
+          <p>
+            <div id="spot-the-ball-demo">
+              
+            </div>
+          </p>
+        </div>
+        
+        <script src="demo.js"></script>
+    </body>
+</html>

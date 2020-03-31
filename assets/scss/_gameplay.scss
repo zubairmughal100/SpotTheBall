@@ -1,0 +1,143 @@
+.game-body {
+    /*
+    background-image: url(../images/bg/footbal-bg.jpg);
+    background-size: cover;
+    background-position: fixed;
+    */
+}
+
+.game-container {
+    
+}
+
+.game {
+    border-radius: 5px;
+}
+
+.game_logo {
+    
+}
+
+.game_header {
+    margin-bottom:20px;
+}
+
+.game_content {
+    
+}
+
+.game-info {
+    
+}
+.player_level_progress {
+
+}
+
+.player_balance {
+
+}
+.player_balance .balance {
+    background-color: #2E323D;
+    padding: 15px 5px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    border: 1px solid #2E323D;
+    color: #ffffff;
+}
+
+.player_game_time {
+
+}
+.player_game_time .timer {
+    background-color: #2E323D;
+    padding: 0px;
+    color: #ffffff;
+    width: 150px;
+    margin: 0px auto;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.player_game_time .timer hr {
+    background-color: #ffffff;
+    width: 50%;
+    height: 2px;
+    padding: 0px !important;
+    margin:2px auto !important;
+}
+.player_game_time .timer p {
+    padding: 0px !important;
+    margin: 0px !important;
+    font-size: 1.4rem;
+}
+
+.player_add_credit {
+    margin-top: 7px;
+}
+.btn-custom-addcredit {
+    background-color:#02A3E9;
+    padding-top: 7px;
+    padding-bottom:7px;
+    color: #fff;
+    font-size: 1.3rem;
+    border-radius:10px;
+    font-weight: bold;
+}
+.btn-custom-addcredit:hover {
+    color: #fff;
+}
+
+
+.game_holder {
+    
+}
+
+/*Stake holder*/
+.game_holder .stake_holder {
+    
+}
+.game_holder .stake_holder .confirm_game{
+    margin:40px 0px 40px 0px;
+}
+.game_holder .stake_holder .stake{
+    background-color: #000000;
+    padding: 100px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.game_holder .stake_holder .stake label {
+    color: #ffffff !important;
+    font-size: 2rem;
+}
+.game_holder .stake_holder .stake input[type='text'] {
+    background-color: red !important;
+    padding: 30px !important;
+    text-align: center !important;
+    border: none !important;
+    position: relative;
+    margin-top: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+/*Play game*/
+.play_game {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.play_game .zoom {
+    position: relative;
+    margin-top:100%;
+}
+
+.btn-group-wrap {
+    text-align: center;
+}
+
+div.btn-group {
+    margin: 10px auto; 
+    text-align: center;
+    width: inherit;
+    display: inline-block;
+}

@@ -1,0 +1,47 @@
+.game_footer {
+    margin-top:40px;
+    padding-bottom: 40px;
+}
+.game_footer footer {
+    background-color: #3C3D41;
+    padding: 60px 40px;
+    border-radius: 5px;
+}
+
+.game_footer footer .footer_title {
+    font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+    margin-bottom:10px;
+    color: #ffffff;
+}
+
+.game_footer footer .footer_content ul {
+    list-style:none;
+    padding:0px;
+    margin-left: 10px;
+}
+.game_footer footer .footer_content .regular li {
+    padding:5px 0px;
+}
+.game_footer footer .footer_content .regular li a {
+    color:rgba(255,255,255,1.00);
+    font-weight:bold;
+    text-transform:uppercase;
+    font-size: 14px;
+}
+.game_footer footer .footer_content .regular li a:hover {
+    color:rgba(255,255,255,0.80);
+    text-decoration:none; 
+}
+
+.game_footer footer .footer_content .social li a {
+    color: rgba(255,255,255,1.00);
+}
+
+.game_footer footer .footer_content .btn-subscribe {
+    background-color: #ffffff;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    border-left: 1px solid #f0f0f0;
+}

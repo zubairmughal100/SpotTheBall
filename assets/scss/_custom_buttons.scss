@@ -1,0 +1,28 @@
+.custom {
+    .btn-custom-outline {
+        border: 1px solid #000000 !important;
+    }
+    .btn-custom-outline:hover {
+        border: 1px solid #000000 !important;
+        color: #000000 !important;
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+        background-color: #01ff01 !important;
+    }
+    .btn-custom-outline:disabled,
+    .btn-custom-outline[disabled="disabled"] {
+        background-color:#cccccc !important;
+    }
+    .btn-custom {
+        border: 1px solid #000000 !important;
+        color: #000000 !important;
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+        background-color: #01ff01 !important;
+    }
+
+    .btn-custom:disabled,
+    .btn-custom[disabled="disabled"] {
+        background-color:#cccccc !important;
+    }
+}

@@ -1,0 +1,318 @@
+/*font Variables*/ 
+$roboto: 'Roboto', sans-serif; 
+/*Color Variables*/ 
+$bc: #5cb85c;
+$border-green:#38a138;
+$border-green-dark:#2b8f2b;
+$heding: #405867; 
+$pfont: #5f6771;
+
+// Mixins
+@mixin transition($property: all, $duration: 300ms, $animate: linear, $delay:0s){
+    transition: $property $duration $animate $delay; 
+}  
+
+// Placeholder Mixins
+@mixin placeholder {
+    &.placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; }
+}
+
+// Font family link
+@import url('https://fonts.googleapis.com/css?family=Roboto:300i,400,400i,500,700,900');
+
+.multi_step_form .btn-group {
+    display: flex !important;
+    margin-bottom: 20px !important;
+}
+
+.multi_step_form .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+    background-color: $bc !important;
+    border:2px solid $bc !important;
+    box-shadow: none !important;
+}
+
+.multi_step_form .btn {
+    cursor: pointer;
+}
+
+.underage_tag {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    line-height: 45px;
+    font-size: 14px;
+    font-weight: 800;
+    border: 2px solid darkred;
+    border-radius: 50px;
+    float: right;
+    clear: both;
+}
+
+
+
+
+.multi_step_form{
+    background: #f6f9fb;
+    display: block;
+    overflow: hidden;
+    #msform {
+        text-align: center;
+        position: relative;
+        *padding-top: 50px;
+        min-height: 1080px;
+        *height: auto;
+        *max-width: 810px;
+        margin: 0 auto;
+        background: #ffffff;
+        z-index: 1;
+        .valid-feedback, .invalid-feedback {
+            text-align: left !important;
+        }
+        .tittle{
+            text-align: center;
+            padding-bottom: 55px;
+            h2{
+                font: 500 24px/35px $roboto;
+                color: #3f4553;
+                padding-bottom: 5px;
+            }
+            p{
+                font: 400 16px/28px $roboto;
+                color: $pfont;
+            }
+        }
+
+        .form-group {
+            margin-bottom: 20px !important;
+        }
+
+        fieldset { 
+            border: 0; 
+            padding: 20px 305px 0;  
+            position: relative;
+            width: 100%;
+            left: 0;
+            right: 0;
+            &:not(:first-of-type) {
+                display: none;
+            }
+            h3{
+                font: 500 18px/35px $roboto;
+                color: #3f4553; 
+            }
+            h6{
+                font: 400 15px/28px $roboto;
+                color: $pfont;
+                padding-bottom: 0px;
+            }
+
+            .intl-tel-input{
+                display: block;
+                background: transparent;
+                border: 0;
+                box-shadow: none;
+                outline: none;
+                .flag-container{
+                    .selected-flag{
+                        padding:0 20px; 
+                        *background: transparent;
+                        border: 0;
+                        box-shadow: none;
+                        outline: none;
+                        width: 65px;
+                        .iti-arrow{
+                            border: 0; 
+                            &:after{ 
+                                content: "\f35f";
+                                position: absolute;
+                                top: 0;
+                                right: 0;
+                                font: normal normal normal 24px/7px Ionicons;
+                                color: $pfont;
+                            }
+                        }
+                    }
+                } 
+            }
+            #phone{
+                padding-left: 80px;
+            }
+            
+            .fg_2, .fg_3{
+                padding-top: 10px;
+                display: block;
+                overflow: hidden;
+            }
+            .fg_3{
+                padding-bottom: 70px;
+            }
+            
+            
+            .done_text{ 
+                padding-top: 40px;
+                .don_icon{
+                    height: 36px;
+                    width: 36px;
+                    line-height: 36px;
+                    font-size: 22px;
+                    margin-bottom: 10px;
+                    background: $bc;
+                    display: inline-block;
+                    border-radius: 50%;
+                    color: #ffffff;
+                    text-align: center;
+                }
+                h6{
+                    line-height: 23px;
+                }
+            }
+             
+            .passport{
+                margin-top: -10px;
+                padding-bottom: 30px;
+                position: relative;
+                .don_icon{
+                    height: 36px;
+                    width: 36px;
+                    line-height: 36px;
+                    font-size: 22px; 
+                    position: absolute;
+                    top: 4px;
+                    right: 0; 
+                    background: $bc;
+                    display: inline-block;
+                    border-radius: 50%;
+                    color: #ffffff;
+                    text-align: center;
+                }
+                h4{
+                    font: 500 15px/23px $roboto;
+                    color: $pfont;
+                    padding: 0;
+                }
+            }
+            
+            
+            .file_added{
+                text-align: left;
+                padding-left: 190px;
+                padding-bottom: 60px;
+                li{
+                    font: 400 15px/28px $roboto;
+                    color: $pfont;
+                    a{
+                        color: $bc;
+                        font-weight: 500;
+                        display: inline-block;
+                        position: relative;
+                        padding-left: 15px;
+                        i{
+                            font-size: 22px;
+                            padding-right: 8px;
+                            position: absolute;
+                            left: 0;
+                            transform: rotate(20deg);
+                        }
+                    }
+                }
+            }
+        }
+        
+        #progressbar {
+            margin-bottom: 30px;
+            overflow: hidden;  
+            li {
+                list-style-type: none;
+                color: #99a2a8; 
+                font-size: 9px;
+                width: calc(100%/4);
+                float: left;
+                position: relative; 
+                font: 500 13px/1 $roboto; 
+                &:nth-child(2){
+                    &:before{
+                        content: "\f12f";
+                    }
+                }
+                &:nth-child(3){
+                    &:before{
+                        content: "\f457";
+                    }
+                }
+                &:before {
+                    content: "\f1fa";
+                    //font: normal normal normal 30px/50px Ionicons;
+                    width: 50px;
+                    height: 50px;
+                    line-height: 50px;
+                    display: block; 
+                    background: #eaf0f4;
+                    border-radius: 50%;
+                    margin: 0 auto 10px auto;
+                } 
+                &:after {
+                    content: '';
+                    width: 100%;
+                    height: 10px;
+                    background: #eaf0f4;
+                    position: absolute;
+                    left: -50%;
+                    top: 21px;
+                    z-index: -1; 
+                } 
+                &:last-child{
+                    &:after{
+                        width: 150%;
+                    }
+                }
+                &.active{
+                    color: $bc;
+                    &:before, &:after{
+                        background: $bc;
+                        color: white;
+                    }
+                }
+            }
+        } 
+        .action-button { 
+            background: $bc; 
+            color: white;
+            border: 0 none;
+            border-radius: 5px;
+            cursor: pointer; 
+            min-width: 130px;
+            width: 47%;
+            font: 700 14px/40px $roboto;
+            border: 1px solid $bc;
+            margin: 0 6px;
+            text-transform: uppercase; 
+            display: inline-block;
+            &:hover, &:focus{
+                background: $heding;
+                border-color: $heding;
+            }
+        }
+        .previous_button {
+            background: transparent;
+            color: #99a2a8;
+            border-color: #99a2a8;
+            &:hover, &:focus{
+                background: $heding;
+                border-color: $heding;
+                color: #fff;
+            }
+        } 
+    } 
+}
+ 
+
+
+@media (max-width: 767px) {
+	.multi_step_form #msform fieldset { 
+        padding: 20px 0px 0;
+    }
+}
